@@ -21,7 +21,7 @@ public class Request {
     public String name;
     public Integer reference;
     public String venue;
-    public Integer price;
+    public Long price;
     public String purchased;
     public String status;
     
@@ -47,15 +47,6 @@ public class Request {
         sb.append("\n");
 
         return sb.toString();
-    }
-    
-    
-    public void setPayloadOfSize(int payloadSize) {
-        // set up the payload
-        StringBuilder sb = new StringBuilder(payloadSize);
-        for (int i = 0; i < payloadSize; i ++)
-        sb.append('z');
-        //payload = sb.toString();
     }
 
 
