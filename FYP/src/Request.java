@@ -1,7 +1,7 @@
 
 public class Request {
     
-	private Request() {
+	Request() {
 	}
 	
 	private Request(String uid) {

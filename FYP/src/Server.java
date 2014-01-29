@@ -16,7 +16,7 @@ public class Server {
         Request template = Request.getRequestWithoutUID();
         template.name = null;
         template.purchased = "no";
-        template.status = "available";    
+        template.status = "available";
 
         while(fly != null){
         	
