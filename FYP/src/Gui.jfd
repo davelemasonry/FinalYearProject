@@ -1,0 +1,45 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_45" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "frame1"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Go"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "text"
+				"maximumSize": new java.awt.Dimension( 20, 30 )
+				"minimumSize": new java.awt.Dimension( 20, 50 )
+				"autoscrolls": true
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "text"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "text"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "slider1"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 100, 15 )
+			"size": new java.awt.Dimension( 315, 200 )
+		} )
+	}
+}
